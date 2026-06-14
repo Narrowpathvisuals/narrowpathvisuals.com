@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Narrow Path Visuals | Videographer Northern NJ</title>
+<meta name="description" content="Meet Andrew, the founder of Narrow Path Visuals — a Northern NJ videography and content creation studio built on faith, purpose, and a passion for storytelling.">
+<meta name="keywords" content="videographer Northern NJ, about Narrow Path Visuals, Andrew NPV, NJ video production">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.narrowpathvisuals.com/about.html">
+<meta property="og:title" content="About | Narrow Path Visuals | Videographer Northern NJ">
+<meta property="og:description" content="Meet Andrew, the founder of Narrow Path Visuals — built on faith, purpose, and a passion for storytelling.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.narrowpathvisuals.com/about.html">
+<meta property="og:image" content="https://www.narrowpathvisuals.com/og-image.png">
+<meta property="og:site_name" content="Narrow Path Visuals">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMxQTFGMkUiLz4KICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQzQ5MzNGIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDQiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIzNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZmlsbD0iI0M0OTMzRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TjwvdGV4dD4KPC9zdmc+">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F9F6F1;
+    --warm-white: #FDFCFA;
+    --stone: #E8E2D9;
+    --stone-mid: #D4CBC0;
+    --gold: #C4933F;
+    --gold-light: #DEB96A;
+    --gold-pale: #F0DEB8;
+    --navy: #1A1F2E;
+    --navy-mid: #252B3B;
+    --charcoal: #2E2926;
+    --body: #4A4540;
+    --muted: #8A837A;
+    --white: #FFFFFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* CURSOR */
+  .cursor { position: fixed; width: 10px; height: 10px; background: var(--gold); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); mix-blend-mode: multiply; }
+  .cursor-ring { position: fixed; width: 36px; height: 36px; border: 1px solid rgba(196,147,63,0.5); border-radius: 50%; pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); transition: all 0.12s ease; }
+  .cursor.hover { width: 20px; height: 20px; }
+  .cursor-ring.hover { width: 60px; height: 60px; opacity: 0.3; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 32px 64px;
+    transition: padding 0.5s, background 0.5s, box-shadow 0.5s;
+  }
+  nav.scrolled {
+    padding: 18px 64px;
+    background: rgba(249,246,241,0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 0 rgba(196,147,63,0.15);
+  }
+  .nav-logo { text-decoration: none; }
+  .nav-links { display: flex; gap: 48px; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 400; position: relative; transition: color 0.3s; }
+  .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.4s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+  .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+  .nav-cta { font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid rgba(196,147,63,0.4); padding: 9px 22px; transition: background 0.3s, color 0.3s; }
+  .nav-cta:hover { background: var(--gold); color: var(--navy); }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; z-index: 200; }
+  .hamburger span { display: block; width: 24px; height: 1.5px; background: var(--navy); transition: all 0.3s ease; }
+  .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: rgba(249,246,241,0.98); backdrop-filter: blur(20px); z-index: 150; flex-direction: column; align-items: center; justify-content: center; gap: 44px; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 400; color: var(--navy); text-decoration: none; transition: color 0.3s; }
+  .mobile-menu a:hover { color: var(--gold); }
+
+  /* HERO */
+  .page-hero {
+    position: relative;
+    height: 75vh;
+    min-height: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(26,31,46,0.2) 0%, rgba(26,31,46,0.7) 100%);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 64px 64px;
+    max-width: 800px;
+  }
+
+  .hero-eyebrow {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideRight 0.9s ease 0.3s forwards;
+  }
+  .hero-eyebrow-line { width: 40px; height: 1px; background: var(--gold); }
+  .hero-eyebrow span { font-size: 0.6rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold-light); }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--warm-white);
+    opacity: 0;
+    animation: fadeUp 1s ease 0.5s forwards;
+  }
+
+  .hero-title em { font-style: italic; color: var(--gold-light); }
+
+  /* MAIN CONTENT */
+  .about-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+  }
+
+  /* LEFT — TEXT */
+  .about-text .eyebrow {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 20px;
+  }
+  .eyebrow-line { width: 32px; height: 1px; background: var(--gold); }
+  .about-text .eyebrow span { font-size: 0.58rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); }
+
+  .about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .about-text h2 em { font-style: italic; color: var(--gold); }
+
+  .about-text p {
+    font-size: 0.92rem;
+    line-height: 2;
+    color: var(--body);
+    margin-bottom: 22px;
+  }
+
+  .about-text p strong { color: var(--navy); font-weight: 500; }
+
+  .about-quote {
+    border-left: 2px solid var(--gold);
+    padding: 20px 28px;
+    margin: 36px 0;
+    background: rgba(196,147,63,0.04);
+  }
+
+  .about-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.6;
+    margin: 0 !important;
+  }
+
+  .about-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--navy);
+    color: var(--warm-white);
+    text-decoration: none;
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 16px 40px;
+    margin-top: 16px;
+    transition: background 0.3s, gap 0.3s;
+  }
+  .about-cta:hover { background: var(--navy-mid, #252B3B); gap: 24px; }
+  .btn-arrow { width: 24px; height: 1px; background: var(--gold); position: relative; }
+  .btn-arrow::after { content: ''; position: absolute; right: 0; top: -3px; width: 6px; height: 6px; border-right: 1px solid var(--gold); border-top: 1px solid var(--gold); transform: rotate(45deg); }
+
+  /* RIGHT — PHOTO + STATS */
+  .about-right { display: flex; flex-direction: column; gap: 3px; }
+
+  .headshot-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .headshot-wrap img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+
+  .headshot-wrap:hover img { transform: scale(1.03); }
+
+  .headshot-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 20px 24px;
+    background: linear-gradient(to top, rgba(26,31,46,0.85), transparent);
+  }
+
+  .headshot-caption p {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin: 0 !important;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+
+  .stat-tile {
+    background: var(--white);
+    border: 1px solid var(--stone);
+    padding: 32px 28px;
+    transition: background 0.3s, border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-tile::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+
+  .stat-tile:hover { background: rgba(196,147,63,0.03); border-color: var(--gold); }
+  .stat-tile:hover::before { transform: scaleX(1); }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* VALUES SECTION */
+  .values-section {
+    background: var(--navy);
+    padding: 120px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .values-bg-text {
+    position: absolute;
+    bottom: -20px; left: -10px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(100px,16vw,200px);
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+    user-select: none; pointer-events: none;
+  }
+
+  .values-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+
+  .values-header { margin-bottom: 72px; }
+  .values-header .eyebrow { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+  .values-header .eyebrow span { font-size: 0.58rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); }
+  .values-header .eyebrow-line { background: var(--gold); }
+  .values-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem,3.5vw,2.8rem); font-weight: 400; color: var(--warm-white); line-height: 1.2; }
+  .values-header h2 em { font-style: italic; color: var(--gold-light); }
+
+  .values-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+
+  .value-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 44px 36px;
+    transition: border-color 0.4s, background 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .value-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+  .value-card:hover { border-color: rgba(196,147,63,0.2); background: rgba(196,147,63,0.04); }
+  .value-card:hover::before { transform: scaleX(1); }
+
+  .value-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 400; color: rgba(196,147,63,0.15); line-height: 1; margin-bottom: 20px; }
+  .value-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; color: var(--warm-white); margin-bottom: 14px; }
+  .value-desc { font-size: 0.82rem; line-height: 1.85; color: rgba(237,233,227,0.55); }
+
+  /* CTA SECTION */
+  .cta-section {
+    padding: 120px 64px;
+    text-align: center;
+    background: var(--warm-white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(196,147,63,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem,4vw,3rem); font-weight: 400; color: var(--navy); margin-bottom: 16px; position: relative; z-index: 1; }
+  .cta-section h2 em { font-style: italic; color: var(--gold); }
+  .cta-section p { font-size: 0.88rem; color: var(--muted); margin-bottom: 40px; line-height: 1.8; position: relative; z-index: 1; }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 14px; background: var(--navy); color: var(--warm-white); text-decoration: none; font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; padding: 16px 40px; transition: background 0.3s, gap 0.3s; }
+  .btn-primary:hover { background: var(--navy-mid, #252B3B); gap: 22px; }
+  .btn-outline { display: inline-flex; align-items: center; gap: 14px; border: 1px solid rgba(196,147,63,0.4); color: var(--gold); text-decoration: none; font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; padding: 15px 40px; transition: background 0.3s, color 0.3s; }
+  .btn-outline:hover { background: var(--gold); color: var(--navy); }
+
+  /* FOOTER */
+  footer { background: var(--navy); padding: 48px 64px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; border-top: 1px solid rgba(196,147,63,0.12); }
+  .footer-links { display: flex; gap: 36px; list-style: none; }
+  .footer-links a { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.3s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { font-size: 0.6rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.2); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes slideRight { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+
+  .sr { opacity: 0; transform: translateY(32px); transition: opacity 0.85s ease, transform 0.85s ease; }
+  .sr.sr-left { transform: translateX(-32px); }
+  .sr.sr-right { transform: translateX(32px); }
+  .sr.visible { opacity: 1; transform: translate(0,0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 20px 28px; }
+    nav.scrolled { padding: 14px 28px; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-content { padding: 0 28px 48px; }
+    .about-main { grid-template-columns: 1fr; gap: 60px; padding: 80px 28px; }
+    .values-section, .cta-section { padding-left: 28px; padding-right: 28px; }
+    .values-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; align-items: flex-start; padding: 40px 28px; }
+    .footer-links { flex-wrap: wrap; gap: 20px; }
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="logo.svg" alt="Narrow Path Visuals" style="height:80px; width:auto;"></a>
+  <ul class="nav-links">
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#testimonials">Reviews</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="https://calendly.com/narrowpathvisuals/30min" target="_blank" class="nav-cta">Book a Call</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="index.html#services" onclick="closeMenu()">Services</a>
+  <a href="index.html#portfolio" onclick="closeMenu()">Portfolio</a>
+  <a href="index.html#testimonials" onclick="closeMenu()">Reviews</a>
+  <a href="pricing.html" onclick="closeMenu()">Pricing</a>
+  <a href="index.html#contact" onclick="closeMenu()">Contact</a>
+  <a href="https://calendly.com/narrowpathvisuals/30min" target="_blank" onclick="closeMenu()" style="color:var(--gold);">Book a Call</a>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <img class="hero-img" src="andy-action.jpg" alt="Andrew shooting at a live event">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>The Story Behind the Lens</span>
+    </div>
+    <h1 class="hero-title">Built on faith.<br><em>Driven by purpose.</em></h1>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="about-main">
+  <div class="about-text sr sr-left">
+    <div class="eyebrow"><div class="eyebrow-line"></div><span>About Andrew</span></div>
+    <h2>More than a business.<br><em>A calling.</em></h2>
+    <p>I started Narrow Path Visuals after spending years searching for my purpose. As a Christian, I often felt like I didn't have a clear calling or direction for my life. My wife and I began praying consistently, asking God to reveal where He wanted me to serve and use my gifts.</p>
+    <p>Not long after, a friend asked me to help film a Christian retreat. Since I already had cameras, microphones, and experience creating content for my YouTube channel, I jumped at the opportunity. While serving at that retreat, several people told me, <strong>"This is your calling. You're gifted at this. This is what you're meant to do."</strong></p>
+    <div class="about-quote">
+      <p>"That experience changed everything. From that moment, Narrow Path Visuals was born."</p>
+    </div>
+    <p>Today, I have the privilege of helping businesses, gyms, churches, conferences, and organizations grow their presence through powerful visual storytelling. Whether it's creating engaging social media content, producing promotional videos, capturing live events, or livestreaming important moments — my goal is simple: <strong>help tell your story in a way that connects with people and leaves a lasting impact.</strong></p>
+    <p>I genuinely love what I do, and I'd be honored to help bring your vision to life and be part of your business's growth journey.</p>
+    <a href="https://calendly.com/narrowpathvisuals/30min" target="_blank" class="about-cta">Book a Free Call <span class="btn-arrow"></span></a>
+  </div>
+
+  <div class="about-right sr sr-right">
+    <div class="headshot-wrap">
+      <img src="andy-headshot.jpg" alt="Andrew — Founder of Narrow Path Visuals">
+      <div class="headshot-caption"><p>Andrew &nbsp;·&nbsp; Founder, Narrow Path Visuals</p></div>
+    </div>
+    <div class="about-stats">
+      <div class="stat-tile">
+        <div class="stat-num">4K</div>
+        <div class="stat-label">Cinematic quality</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-num">NJ</div>
+        <div class="stat-label">Based &amp; available</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-num">Live</div>
+        <div class="stat-label">Streaming ready</div>
+      </div>
+      <div class="stat-tile">
+        <div class="stat-num">5★</div>
+        <div class="stat-label">Google rated</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUES -->
+<div class="values-section">
+  <div class="values-bg-text">WHY</div>
+  <div class="values-inner">
+    <div class="values-header sr">
+      <div class="eyebrow"><div class="eyebrow-line"></div><span>What Drives Us</span></div>
+      <h2>The values behind <em>every frame</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card sr">
+        <div class="value-num">01</div>
+        <div class="value-title">Faith First</div>
+        <div class="value-desc">Everything we do is rooted in purpose and guided by faith. Narrow Path Visuals wasn't built for profit — it was built as a calling. That shows in every project we take on.</div>
+      </div>
+      <div class="value-card sr" style="transition-delay:0.1s">
+        <div class="value-num">02</div>
+        <div class="value-title">Intentional Storytelling</div>
+        <div class="value-desc">We don't just point a camera and hit record. Every shot, every edit, every frame is intentional — because your story deserves to be told with care and craftsmanship.</div>
+      </div>
+      <div class="value-card sr" style="transition-delay:0.2s">
+        <div class="value-num">03</div>
+        <div class="value-title">Your Growth Is Our Goal</div>
+        <div class="value-desc">We measure our success by yours. When your brand grows, your audience expands, and your business thrives — that's when we know we've done our job right.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2 class="sr">Ready to tell your <em>story?</em></h2>
+  <p class="sr">Let's connect and build something great together.</p>
+  <div class="cta-buttons sr">
+    <a href="https://calendly.com/narrowpathvisuals/30min" target="_blank" class="btn-primary">Book a Free Call <span class="btn-arrow"></span></a>
+    <a href="index.html#portfolio" class="btn-outline">View Our Work</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img src="logo.svg" alt="Narrow Path Visuals" style="height:72px; width:auto; opacity:0.9;">
+  <ul class="footer-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">&copy; 2025 Narrow Path Visuals &nbsp;·&nbsp; All rights reserved</p>
+</footer>
+
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; cursor.style.left = mouseX+'px'; cursor.style.top = mouseY+'px'; });
+  function animateRing() { ringX += (mouseX-ringX)*0.12; ringY += (mouseY-ringY)*0.12; ring.style.left = ringX+'px'; ring.style.top = ringY+'px'; requestAnimationFrame(animateRing); }
+  animateRing();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); ring.classList.remove('hover'); });
+  });
+
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+
+  const srEls = document.querySelectorAll('.sr');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), entry.target.dataset.delay || 0); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+  srEls.forEach((el, i) => { el.dataset.delay = (i % 3) * 100; observer.observe(el); });
+
+  function toggleMenu() { document.getElementById('hamburger').classList.toggle('open'); document.getElementById('mobileMenu').classList.toggle('open'); document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('open') ? 'hidden' : ''; }
+  function closeMenu() { document.getElementById('hamburger').classList.remove('open'); document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow = ''; }
+</script>
+</body>
+</html>
