@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Narrow Path Visuals</title>
+  <meta name="description" content="Book Narrow Path Visuals for Hyrox race coverage, gym content creation, or brand videography. DM on Instagram or fill out our contact form.">
+  <meta property="og:title" content="Contact | Narrow Path Visuals">
+  <meta property="og:description" content="Book your Hyrox race coverage or get a quote for gym/brand content.">
+  <meta property="og:url" content="https://narrowpathvisuals.com/contact.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0A0A0A;
+      --dark: #111111;
+      --dark-2: #1A1A1A;
+      --dark-3: #222222;
+      --gold: #C4933F;
+      --gold-light: #DEB96A;
+      --gold-dim: rgba(196,147,63,0.15);
+      --white: #FFFFFF;
+      --muted: #888888;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.3rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .nav-links .btn-nav {
+      background: var(--gold);
+      color: var(--black);
+      padding: 0.5rem 1.25rem;
+      font-weight: 700;
+      border-radius: 3px;
+    }
+    .nav-links .btn-nav:hover { background: var(--gold-light); color: var(--black); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.3s;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .close-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      padding: 10rem 2rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: 'CONTACT';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(6rem, 20vw, 16rem);
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      color: rgba(196,147,63,0.04);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .page-hero-content { position: relative; z-index: 1; }
+    .page-hero .tag {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+    .page-hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .page-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ── CONTACT GRID ── */
+    .contact-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-section { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    /* ── CONTACT INFO SIDE ── */
+    .contact-info h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .contact-info h2 span { color: var(--gold); }
+    .contact-info > p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--white);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .contact-method:hover {
+      border-color: var(--gold);
+      background: var(--dark-3);
+    }
+    .contact-method-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gold-dim);
+      border: 1px solid rgba(196,147,63,0.3);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    .contact-method-text { min-width: 0; }
+    .contact-method-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .contact-method-value {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--white);
+    }
+
+    /* ── HYROX CTA BOX ── */
+    .hyrox-cta-box {
+      background: linear-gradient(135deg, rgba(196,147,63,0.12), rgba(196,147,63,0.04));
+      border: 1px solid rgba(196,147,63,0.3);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .hyrox-cta-box .box-tag {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .hyrox-cta-box h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .hyrox-cta-box p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-instagram:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    /* ── CALENDLY LINK ── */
+    .calendly-box {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .calendly-box .cal-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .calendly-box .cal-text { flex: 1; min-width: 0; }
+    .calendly-box .cal-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.15rem;
+    }
+    .calendly-box .cal-desc {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .calendly-box a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      padding: 0.4rem 0.9rem;
+      border-radius: 3px;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+    .calendly-box a:hover { background: var(--gold); color: var(--black); }
+
+    /* ── FORM SIDE ── */
+    .contact-form-wrap {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2.5rem;
+    }
+    .contact-form-wrap h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .contact-form-wrap > p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: var(--dark-3);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--muted); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+    .form-group select option { background: var(--dark-3); }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 480px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    .form-note {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* ── SUCCESS STATE ── */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .form-success .check {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .form-success h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: var(--gold);
+    }
+    .form-success p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.95rem;
+    }
+
+    /* ── FAQ ── */
+    .faq-section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-header .tag {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(196,147,63,0.4);
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 0.75rem;
+    }
+    .section-header h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-align: left;
+      padding: 1.25rem 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      color: var(--gold);
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--gold-dim); border-color: var(--gold); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-answer-inner {
+      padding-bottom: 1.25rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 640px) {
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-top: 0.75rem;
+    }
+    .footer-heading {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-bottom p { font-size: 0.8rem; color: var(--muted); }
+    .footer-bottom a { color: var(--gold); text-decoration: none; }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Narrow <span>Path</span> Visuals</a>
+  <ul class="nav-links">
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="hyrox-boston.html">Boston</a></li>
+    <li><a href="hyrox-nashville.html">Nashville</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener" class="btn-nav">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" id="closeMenu">✕</button>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="hyrox-boston.html">Boston</a>
+  <a href="hyrox-nashville.html">Nashville</a>
+  <a href="services.html">Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener" style="color:var(--gold);">Book Now ↗</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-content reveal">
+    <div class="tag">Get In Touch</div>
+    <h1>Let's Work<br>Together</h1>
+    <p>Ready to document your race or grow your brand? Reach out — response within 24 hours.</p>
+  </div>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="contact-section">
+
+  <!-- LEFT: Info -->
+  <div class="contact-info reveal">
+    <h2>Reach <span>Andy</span></h2>
+    <p>Whether you're racing in Boston or Nashville, want monthly gym content, or need brand videography — let's talk. For Hyrox bookings, Instagram DM is the fastest way to lock in your spot.</p>
+
+    <div class="contact-methods">
+      <a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener" class="contact-method">
+        <div class="contact-method-icon">📸</div>
+        <div class="contact-method-text">
+          <div class="contact-method-label">Instagram</div>
+          <div class="contact-method-value">@narrowpathvisuals</div>
+        </div>
+      </a>
+      <a href="mailto:info@narrowpathvisuals.com" class="contact-method">
+        <div class="contact-method-icon">✉️</div>
+        <div class="contact-method-text">
+          <div class="contact-method-label">Email</div>
+          <div class="contact-method-value">info@narrowpathvisuals.com</div>
+        </div>
+      </a>
+      <a href="tel:+12017302210" class="contact-method">
+        <div class="contact-method-icon">📱</div>
+        <div class="contact-method-text">
+          <div class="contact-method-label">Phone / Text</div>
+          <div class="contact-method-value">(201) 730-2210</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Hyrox CTA Box -->
+    <div class="hyrox-cta-box">
+      <div class="box-tag">⚡ Hyrox Race Bookings</div>
+      <h3>Book via Instagram DM</h3>
+      <p>Hyrox spots are limited and fill up fast. DM @narrowpathvisuals with your race category (Singles or Doubles) and event date to reserve your coverage.</p>
+      <a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener" class="btn-instagram">
+        <span>📩</span> DM @narrowpathvisuals
+      </a>
+    </div>
+
+    <!-- Calendly for non-Hyrox -->
+    <div class="calendly-box">
+      <div class="cal-icon">📅</div>
+      <div class="cal-text">
+        <div class="cal-label">Gym & Brand Inquiries</div>
+        <div class="cal-desc">Schedule a free 30-min discovery call</div>
+      </div>
+      <a href="https://calendly.com/narrowpathvisuals/30min" target="_blank" rel="noopener">Schedule</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: Form -->
+  <div class="contact-form-wrap reveal">
+    <h2>Send a Message</h2>
+    <p>For gym content, brand videography, or general questions — fill this out and I'll get back to you within 24 hours.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/xeewpgjk" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="first_name" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="last_name" placeholder="Smith" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">What Are You Interested In?</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service...</option>
+          <option value="gym-content">Monthly Gym Content</option>
+          <option value="brand-videography">Brand Videography</option>
+          <option value="hyrox-general">Hyrox — General Question</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project, gym, or brand — the more detail the better." required></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="New inquiry from narrowpathvisuals.com">
+
+      <button type="submit" class="btn-submit">Send Message →</button>
+
+      <p class="form-note">
+        I typically respond within 24 hours. For urgent Hyrox bookings,<br>
+        DM me on Instagram for the fastest response.
+      </p>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <div class="check">✅</div>
+      <h3>Message Sent!</h3>
+      <p>Thanks for reaching out. I'll get back to you within 24 hours.<br>
+      For Hyrox race bookings, DM <a href="https://instagram.com/narrowpathvisuals" target="_blank" style="color:var(--gold);">@narrowpathvisuals</a> to lock in your spot fast.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-header reveal">
+    <div class="tag">Common Questions</div>
+    <h2>FAQ</h2>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-question">
+      How do I book Hyrox race coverage?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        The fastest way to book is to DM <strong>@narrowpathvisuals</strong> on Instagram with your race event (Boston or Nashville), race category (Singles or Doubles), and your bib number if you have it. Spots are limited so booking early is key.
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-question">
+      When will I receive my photos and videos?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        Edited content is typically delivered within 24–48 hours after the event. You'll receive a private link to download your files in full resolution, ready to post directly to social media.
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-question">
+      Do you offer Hyrox photography without video?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        Yes — for Hyrox events you can book photo-only, video-only, or the Photo + Video package. See the <a href="pricing.html" style="color:var(--gold);">Pricing page</a> for all options. Outside of Hyrox, Narrow Path Visuals focuses exclusively on videography (gym content and brand video).
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-question">
+      What's included in the gym monthly retainer?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        Gym retainers include regular content shoots, editing, and delivery of social-ready short-form videos designed to grow your gym's audience. Exact deliverables are tailored to each gym — fill out the form above or schedule a call to discuss your needs.
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-question">
+      Do you travel for events outside Boston and Nashville?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        Currently I'm covering Hyrox Boston (Oct 8–11) and Hyrox Nashville (Dec 10–13). For other events or cities, reach out — future events may be added based on demand.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">Narrow <span style="color:var(--gold)">Path</span> Visuals</a>
+      <p>Hyrox race videographer & photographer. Capturing every rep, every wall ball, every finish line. Based in NJ — racing everywhere.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Events</div>
+      <ul class="footer-links">
+        <li><a href="hyrox-boston.html">Hyrox Boston — Oct 8</a></li>
+        <li><a href="hyrox-nashville.html">Hyrox Nashville — Dec 10</a></li>
+        <li><a href="pricing.html">Race Pricing</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Company</div>
+      <ul class="footer-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener">Instagram ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Narrow Path Visuals. All rights reserved.</p>
+    <p>Built for athletes. <a href="https://instagram.com/narrowpathvisuals" target="_blank" rel="noopener">@narrowpathvisuals</a></p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').style.maxHeight = '0';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Formspree AJAX
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('.btn-submit');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } else {
+        btn.textContent = 'Try Again';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
